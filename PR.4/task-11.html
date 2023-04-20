@@ -1,0 +1,21 @@
+<script type="text/javascript">
+
+    var num = parseInt(prompt("Enter the number "));
+    var i = 2;
+    var isPrime = true;
+
+    while (i < num) {
+    if (num % i === 0) {
+        isPrime = false;
+        break;
+    }
+    i++;
+    }
+
+    if (isPrime) {
+    document.write("<h2>"+num+" is a prime number.<h2/>");
+    } else {
+    document.write("<h2>"+num+" is not a prime number.<h2/>");
+    }
+
+</script>

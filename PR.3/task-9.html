@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    function damo(a,b,c){
+        if(a>b){
+            if(a>c){
+                return 1;
+            }else{
+                return 2;
+                
+            }
+        }else{
+            if(b>c){
+                return 3;
+            }else{
+                return 4;
+            }
+        }
+    }
+    var a = parseInt(prompt("Enter no of A:-"));
+    var b = parseInt(prompt("Enter no of B:-"));
+    var c = parseInt(prompt("Enter no of C:-"));
+    var ans = damo(a,b,c);
+
+    if(ans == 1){
+        document.write("<h1>A is big</h1>");
+    }else if(ans == 2){
+        document.write("<h1>C is big</h1>");
+    }else if(ans == 1){
+        document.write("<h1>B is big</h1>");
+    }else{
+        document.write("<h1>C is big</h1>");
+    }
+</script>

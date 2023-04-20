@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    function damo1(){
+        var a = parseInt(prompt("Enter the number A :-"));
+        return a;
+    }function damo2(){
+        var b = parseInt(prompt("Enter the number B :-"));
+        return b;
+    }
+
+    var a = damo1();
+    var b = damo2();
+    
+    function ans(a,b){
+        a = a-b;
+        b = a+b;
+        a = b-a;
+        return a,b;
+    }
+    var result = ans(a,b);
+    document.write(" ans a ="+result);
+    document.write(" ans b ="+result);
+
+</script>
